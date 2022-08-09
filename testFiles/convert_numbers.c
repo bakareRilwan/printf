@@ -1,6 +1,6 @@
 /*
  * File: convert_numbers.c
- * Author: Abdulrahman Al-awal
+ * Authors: Abdulrahman Al-awal and Bakare Rilwan
  */
 
 #include "holberton.h"
