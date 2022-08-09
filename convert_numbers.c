@@ -1,8 +1,3 @@
-/*
- * File: convert_numbers.c
- * Authors: Ifada samuel & Bakare Rilwan.
- */
-
 #include "main.h"
 
 unsigned int convert_di(va_list args, buffer_t *output,
