@@ -1,5 +1,5 @@
-#ifndef AWWAL_BAKARE
-#define AWWAL_BAKARE
+#ifndef BAKARE_IFADA
+#define BAKARE_IFADA
 
 #include <limits.h>
 #include <stdarg.h>
@@ -37,6 +37,7 @@ typedef struct buffer_s
 
 /**
  * struct converter_s - A new type defining a converter struct.
+ * int - a function
  * @specifier: A character representing a conversion specifier.
  * @func: A pointer to a conversion function corresponding to specifier.
  */
@@ -88,7 +89,7 @@ unsigned int convert_r(va_list args, buffer_t *output,
 unsigned int convert_R(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len);
 
-/* Handlers */
+/* handles */
 unsigned char handle_flags(const char *flags, char *index);
 unsigned char handle_length(const char *modifier, char *index);
 int handle_width(va_list args, const char *modifier, char *index);
@@ -104,7 +105,7 @@ unsigned int print_string_width(buffer_t *output,
 unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 		unsigned char flags, int wid);
 
-/* Helper Functions */
+/* Helper Functions. */
 buffer_t *init_buffer(void);
 void free_buffer(buffer_t *output);
 unsigned int _memcpy(buffer_t *output, const char *src, unsigned int n);

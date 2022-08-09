@@ -1,3 +1,6 @@
+/**
+ * Authors: Bakare Rilwan & Ifada samuel.
+ */
 #include "main.h"
 
 unsigned int _memcpy(buffer_t *output, const char *src, unsigned int n);

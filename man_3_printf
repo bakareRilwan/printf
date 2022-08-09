@@ -1,8 +1,10 @@
+.TH _PRINTF 3 "April 2022" "0.1" "0x11. C - _printf"
+
 .SH NAME
 .B _printf\fR \- formatted output conversion
 
 .SH SYNOPSIS
-.B #include \fB"holberton.h"
+.B #include \fB"main.h"
 
 .B int printf(const char *\fIformat\fB, ...);
 
@@ -214,12 +216,12 @@ Code such as \fB_printf(\fIfoo\fB);\fR possibly indicates a bug, since
 \fIfoo\fR may contain a % character.
 
 .SH EXAMPLE
-To print the address of Holberton School in the form "972 Mission St., San 
+To print the address of main School in the form "972 Mission St., San 
 Francisco, CA 94103", followed by a new line, where \fIstreet\fR, \fIcity\fR, 
 and \fIstate\fR are pointers to strings:
 
 .RS
-#include "holberton.h"
+#include "main.h"
 
 int main(void)
 
@@ -240,7 +242,7 @@ To print the result of basic mathematical operations prepended by signs and
 all numbers printed with a minimum precision of two digits:
 
 .RS
-#include "holberton.h"
+#include "main.h"
 
 int main(void)
 
@@ -257,7 +259,7 @@ To print the values of LONG_MAX and LONG_MIN aligned and
 left-justified with a width of 30:
 
 .RS
-#include "holberton.h"
+#include "main.h"
 
 #include <limits.h>
 
@@ -279,3 +281,5 @@ The \fB_printf()\fR function emulates functionality of the C standard library
 function \fBprintf()\fR. This man page borrows from the corresponding Linux 
 man page printf(3).
 
+.SH AUTHOR
+Ifada samuel & Bakare Rilwan.

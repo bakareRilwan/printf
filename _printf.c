@@ -1,3 +1,8 @@
+/**
+ * Authors - Ifada samuel & Bakare Rilwan.
+ * @args: va_lists of arguement provided to printf
+ * @output: A buffer_t struct.
+ */
 #include "main.h"
 
 void cleanup(va_list args, buffer_t *output);
