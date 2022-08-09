@@ -1,8 +1,3 @@
-/*
- * File: convert_c_per_p.c
- * Authors: Ifada samuel & Bakare Rilwan.
- */
-
 #include "main.h"
 
 unsigned int convert_c(va_list args, buffer_t *output,

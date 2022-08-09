@@ -1,8 +1,3 @@
-/*
- * File: convert_hex.c
- * Authors: Bakare Rilwan & Ifada samuel.
- */
-
 #include "main.h"
 
 unsigned int convert_x(va_list args, buffer_t *output,

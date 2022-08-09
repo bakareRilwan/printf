@@ -1,8 +1,3 @@
-/*
- * File: convert_base.c
- * Authors: Bakare Rilwan & Ifada samuel.
- */
-
 #include "main.h"
 
 unsigned int convert_sbase(buffer_t *output, long int num, char *base,
