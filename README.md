@@ -4,7 +4,6 @@
  * printf - prints  preformmatted text to stdout
  * Return: int
  * @format: %c or %s e.t.c as seen in printf
- * Authors: Bakare Rilwan & Samuel Ifada
  */
 ````
 ```` c int printf ( const char * format, ... ); ````
@@ -35,16 +34,12 @@ int main(void)
 	
 	cohort = 5;
 	string = "The Authors of this project";
-	author1 = "Bakare Rilwan";
-	author2 = "Ifada Samuel"
-	_printf("%s are %s & %s from cohort %d 2022", string, author1, author2, cohort);
 	return (0);
 }
 ```
 ```{bash}
 linux>$  gcc -Wall -Werror -Wextra -pedantic *.c -o print_program
 linux>$  ./print_program
-The Authors of this project are Bakare Rilwan & Ifada Samuel from cohort 5 2022
 linux>$
 ```
 
@@ -103,6 +98,3 @@ Where the specifier character at the end is the most significant component, sinc
 On **success**, the **total number** of characters written is returned.
 If a writing error occurs, the error indicator (ferror) is set and a negative number is returned.
 
-## Contributors :black_nib:
-- [Bakare Rilwan](https://github.com/baccrie)
-- [Ifada Samuel](https://github.com/samuelifada)
