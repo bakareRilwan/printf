@@ -1,6 +1,6 @@
 /*
  * FILE: convert_strings.c
- * Author: Abdulrahman AL-awal
+ * Authors: Abdulrahman AL-awal and Bakare Rilwan
  */
 
 #include "holberton.h"
