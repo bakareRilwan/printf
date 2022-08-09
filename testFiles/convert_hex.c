@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: convert_hex.c
+ * Authors: Abdulrahman Adeyinka and Bakare Rilwan
+ */
+
+#include "holberton.h"
 
 unsigned int convert_x(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len);
@@ -6,17 +11,17 @@ unsigned int convert_X(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len);
 
 /**
- * convert_x - Converts an unsigned int argument to hex using abcdef
- *             and stores it to a buffer contained in a struct.
- * @args: A va_list pointing to the argument to be converted.
- * @flags: Flag modifiers.
- * @wid: A width modifier.
- * @prec: A precision modifier.
- * @len: A length modifier.
- * @output: A buffer_t struct containing a character array.
- *
- * Return: The number of bytes stored to the buffer.
- */
+  * convert_x - C onverts an unsigned int argument to hex using abcdef
+  *		and stores it to a buffer contained in a staruct.
+  * @args: A va_list pointing to the argument to be converted.
+  * @flags: Flag modifiers.
+  * @wid: A width modifier.
+  * @prec: A precision modifier.
+  * @len: A length modifier.
+  * @output: A buffer_t struct containing a character array.
+  *
+  * Return: The number of bytes stored to the buffer.
+  */
 unsigned int convert_x(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len)
 {
@@ -53,7 +58,7 @@ unsigned int convert_x(va_list args, buffer_t *output,
  * @len: A length modifier.
  * @output: A buffer_t struct containing a character array.
  *
- * Return: The number of bytes stored to the buffer.
+ * Return: The number of bytes stored to the buffer
  */
 unsigned int convert_X(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len)

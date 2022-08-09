@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: convert_numbers.c
+ * Authors: Abdulrahman Al-awal and Bakare Rilwan
+ */
+
+#include "holberton.h"
 
 unsigned int convert_di(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len);
@@ -10,17 +15,17 @@ unsigned int convert_o(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len);
 
 /**
- * convert_di - Converts an argument to a signed int and
- *              stores it to a buffer contained in a struct.
- * @args: A va_list pointing to the argument to be converted.
- * @flags: Flag modifiers.
- * @wid: A width modifier.
- * @prec: A precision modifier.
- * @len: A length modifier.
- * @output: A buffer_t struct containing a character array.
- *
- * Return: The number of bytes stored to the buffer.
- */
+  * convert_di - Converts an argument to a signed int and
+  *		 stores it toa buffer contained in a struct.
+  * @args: A va_list pointing to the argument to be converted
+  * @flags: Flag modifiers.
+  * @wid: A width modifier.
+  * @prec: A precision modifier.
+  * @len: A length modifier.
+  * @output: A buffer_t struct containing a character array.
+  *
+  * Return: The number of bytes stored to the buffer.
+  */
 unsigned int convert_di(va_list args, buffer_t *output,
 		unsigned char flags, int wid, int prec, unsigned char len)
 {
@@ -39,9 +44,9 @@ unsigned int convert_di(va_list args, buffer_t *output,
 	if (SPACE_FLAG == 1 && d >= 0)
 		ret += _memcpy(output, &space, 1);
 
-	if (prec <= 0 && NEG_FLAG == 0) /* Handle width  */
+	if (prec <= 0 && NEG_FLAG == 0) /* Handle width */
 	{
-		if (d == LONG_MIN)
+		if (d == LONG_ MIN)
 			count += 19;
 		else
 		{
@@ -56,7 +61,7 @@ unsigned int convert_di(va_list args, buffer_t *output,
 		/* Handle plus flag when zero flag is active */
 		if (ZERO_FLAG == 1 && PLUS_FLAG == 1 && d >= 0)
 			ret += _memcpy(output, &plus, 1);
-		/*Print negative sign when zero flag is active */
+		/* Print negative sign when zero flag is active */
 		if (ZERO_FLAG == 1 && d < 0)
 			ret += _memcpy(output, &neg, 1);
 
@@ -113,7 +118,7 @@ unsigned int convert_b(va_list args, buffer_t *output,
  * @wid: A width modifier.
  * @prec: A precision modifier.
  * @len: A length modifier.
- * @output: A buffer_t struct containing a character array.
+ * @output: A buffer_t struct containing a character arra
  *
  * Return: The number of bytes stored to the buffer.
  */

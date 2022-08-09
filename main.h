@@ -1,5 +1,5 @@
-#ifndef BAKARE_IFADA
-#define BAKARE_IFADA
+#ifndef AWWAL_BAKARE
+#define AWWAL_BAKARE
 
 #include <limits.h>
 #include <stdarg.h>
