@@ -1,6 +1,6 @@
 /**
  * FILE : handles.c
- * Author: Abdulrahman Al-awal
+ * Authors: Abdulrahman Al-awal and Bakare Rilwan
  */
 #include "holberton.h"
 
