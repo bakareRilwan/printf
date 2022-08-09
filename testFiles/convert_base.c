@@ -1,6 +1,6 @@
 /*
  * File name: convert_base.c
- * Authors: Abdulrahman Al-awal and Bakare Rilwan
+ * Author: Abdulrahman Al-awal and Bakare Rilwan
  */
 
 #include "holberton.h"
