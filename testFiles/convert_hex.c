@@ -1,6 +1,6 @@
 /*
  * File: convert_hex.c
- * Authors: Abdulrahman Adeyinka
+ * Authors: Abdulrahman Adeyinka and Bakare Rilwan
  */
 
 #include "holberton.h"
